@@ -9,20 +9,20 @@
 <body class="bg-[#101010] text-white">
 <div class="wrapper">
     <div class="content">
-        <header>
-            <div class="max-w-[1296px] mx-auto flex justify-between items-center py-8 min-h-[124px]">
+        <header class="sticky top-0 w-full z-10 backdrop-blur-[12px]">
+            <div class=" max-w-[1296px] mx-auto flex justify-between items-center py-8 min-h-[124px]">
                 <div class="flex items-center">
                     <img class="mr-[10px]" src="./images/Rectangle%20203.png" alt="">
                     <p class="text-sm font-normal leading-[22px]">
                         Міністерство <br> Відновлення
                     </p>
                 </div>
-                <nav class="flex justify-between w-[608px] px-[10px]">
-                    <a class="text-base font-extrabold leading-[22px] text-white" href="#">Реєстри</a>
-                    <a class="text-base font-extrabold leading-[22px] text-white" href="#">Сервіси</a>
-                    <a class="text-base font-extrabold leading-[22px] text-white" href="#">Стратегії</a>
-                    <a class="text-base font-extrabold leading-[22px] text-white" href="#">Програми та проєкти</a>
-                    <a class="text-base font-extrabold leading-[22px] text-white" href="#">Документація</a>
+                <nav class="flex justify-between w-[684px] px-[10px]">
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Реєстри</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Сервіси</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Стратегії</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Програми та проєкти</a>
+                    <a class="text-base font-extrabold leading-[22px] text-white rounded-[20px] active:text-black active:bg-yellow-300  hover:bg-zinc-800 p-[10px] mr-[12px] transition-[0.2s]" href="#">Документація</a>
                 </nav>
                 <div class="flex items-center space-x-4">
                     <a href="#"><img src="./images/btn.png" alt=""></a>
@@ -40,7 +40,7 @@
 <!--            Preview-->
             <div class="relative w-full mb-[144px]">
                 <div class="relative w-full h-full">
-                    <img class="w-full h-full object-cover block" src="./images/animation%20map.png" alt="">
+                    <img class="w-full max-h-[1000px] object-cover block" src="./images/animation%20map.png" alt="">
                     <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center text-white">
                         <!-- Верхний текст -->
                         <div class="preview__head absolute top-0 left-0 w-full text-center bg-[rgba(21,21,21,0.5)] backdrop-blur-[10px] p-5">
@@ -59,53 +59,61 @@
             </div>
 <!--            Folder-->
             <div class="mb-[140px]">
-                <div class="folder__container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-center">
+                <div class="folder__container max-w-[1312px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-9 justify-items-center">
                     <!-- Блок 1 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">1/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">Інтерактивна карта</p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">1/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Інтерактивна карта</p>
                     </div>
+
                     <!-- Блок 2 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">2/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">
-                            Стратегічне <br> планування
-                        </p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">2/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Стратегічне <br> планування</p>
                     </div>
+
                     <!-- Блок 3 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">3/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">
-                            Реєстр договорів про  співробітництво  територіальних  громад
-                        </p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">3/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-45px]">Реєстр договорів про<br> співробітництво територіальних<br> громад</p>
                     </div>
+
                     <!-- Блок 4 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">4/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">
-                            Профайл громад
-                        </p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">4/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Профайл громад</p>
                     </div>
+
                     <!-- Блок 5 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">5/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">
-                            Інвестиційний індекс
-                        </p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">5/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Інвестиційний індекс</p>
                     </div>
+
                     <!-- Блок 6 -->
-                    <div class="relative inline-block transition-transform duration-200 ease-out hover:-translate-y-5">
-                        <img class="block h-auto" src="./images/Frame%20140.png" alt="">
-                        <h2 class="absolute top-[10px] left-[30px] text-[24px] font-normal">6/6</h2>
-                        <p class="absolute bottom-[40px] left-[30px] text-[26px] font-normal leading-normal max-w-[250px]">
-                            Місцеві дані
-                        </p>
+                    <div class="folder__block relative flex flex-col justify-between items-start m-3 group">
+                        <img src="./images/Frame%20140.png" alt="" class="w-full">
+                        <img src="./images/Frame%2014011.png" alt=""
+                             class="overlay absolute top-[45px] left-0 w-full -z-10 h-[310px] transition-transform duration-200 ease-in-out group-hover:translate-y-[-85px]">
+                        <h2 class="absolute top-[10px] left-[30px] text-2xl font-normal">6/6</h2>
+                        <p class="absolute bottom-[40px] left-[30px] text-lg font-normal max-w-[250px] transition-transform duration-200 group-hover:translate-y-[-85px]">Місцеві дані</p>
                     </div>
+
                 </div>
             </div>
 <!--            Circle-->
